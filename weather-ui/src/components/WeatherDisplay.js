@@ -16,8 +16,8 @@ class WeatherDisplay extends React.Component {
     }
     
     getForecast = () => {
-        
-        axios.get('http://api.openweathermap.org/data/2.5/weather?zip=94112,us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial')
+        let zip = 94112;
+        axios.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial')
         .then((response) => {
             this.setState({ forecast: response.data });
         });
@@ -26,7 +26,6 @@ class WeatherDisplay extends React.Component {
     render() {
         return (
             <div>
-                forecast:
                 {JSON.stringify(this.state)}
             </div>
         );
