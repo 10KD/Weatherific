@@ -17,7 +17,7 @@ class WeatherDisplay extends React.Component {
     
     getForecast = () => {
         let zip = 94112;
-        axios.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial')
+        axios.get('https://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial')
         .then((response) => {
             this.setState({ forecast: response.data });
         });
