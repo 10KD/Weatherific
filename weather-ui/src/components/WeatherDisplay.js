@@ -26,6 +26,7 @@ class WeatherDisplay extends React.Component {
     render() {
         return (
             <div>
+                forecast:
                 {console.log(this.state)}
             </div>
         );
