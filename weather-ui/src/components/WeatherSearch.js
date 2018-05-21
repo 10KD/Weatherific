@@ -28,12 +28,13 @@ class WeatherSearch extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="search-box">
                         <label htmlFor="search">Please Enter a City Name or US Zip Code</label>
-                        <input className="search-input" 
-                        type="text" name="search" 
-                        onChange={this.handleChange} 
+
+                        <input 
+                        className="search-input" type="text" name="search" 
+                        placeholder="e.g. San Francisco or 94117"
                         value={this.state.input} 
-                        placeholder="e.g. San Francisco or 94117"/>
-                        {console.log(this.state)}
+                        onChange={this.handleChange} />
+
                         <button className="search-button">Search</button>
                     </div>
                 </form>
