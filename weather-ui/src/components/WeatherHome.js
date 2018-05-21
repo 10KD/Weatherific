@@ -62,7 +62,7 @@ class WeatherHome extends React.Component {
 
             return (
                 <div className="home">
-                    <h1>Weatherific by Don Kim</h1>
+                    <h1>Weather App by Don Kim</h1>
                     <WeatherSearch 
                     search={this.search}/>
                     <WeatherDisplay 
